@@ -1,0 +1,55 @@
+.payment-method {
+    width: 45%;
+    padding-left: 30px;
+}
+.payment-method > h1 {
+    color: #000d6b;
+    font-size: 20px;
+    font-weight: 700;
+}
+.payment-method > form {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.payment-method .form-control {
+    display: flex;
+    column-gap: 7px;
+}
+.form-control > label {
+    color: #000d6b;
+    font-weight: 600;
+}
+.form-control > .form-img {
+    margin-left: auto;
+}
+.payment-method > form > button {
+    background-color: #000d6b;
+    color: #fff;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 9px 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: auto;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* -------------Responsive------------- */
+
+@media screen and (max-width: 990px) {
+    .payment-method {
+        margin-top: 80px;
+        width: 100%;
+        padding: 0;
+    }
+}

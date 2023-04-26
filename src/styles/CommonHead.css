@@ -1,0 +1,23 @@
+.common-head {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.common-head > p {
+    color: #f9a826;
+    font-size: 19px;
+    font-weight: 600;
+}
+.common-head > h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: #000d6b;
+}
+
+/* ------------Responsive----------- */
+
+@media screen and (max-width: 768px) {
+    .common-head > h3 {
+        font-size: 25px;
+    }
+}

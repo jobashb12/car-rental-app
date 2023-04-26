@@ -1,0 +1,110 @@
+.car-detail {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 0 15px;
+}
+.car-detail > .car-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.car-row > .car-img,
+.car-row > .car-data {
+    width: 49%;
+}
+.car-row > .car-img > img {
+    width: 100%;
+    object-fit: contain;
+}
+.car-row > .car-data > h1 {
+    color: #000d6b;
+    font-weight: 600;
+}
+.car-row > .car-data > .price-rating {
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+    margin-top: 10px;
+}
+.price-rating > .price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000d6b;
+}
+
+.price-rating > .rating {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: #000d6b;
+}
+.price-rating > .rating > span {
+    display: flex;
+    align-items: center;
+}
+.car-row > .car-data > p {
+    margin-top: 35px;
+    color: #7c8a97;
+    font-size: 0.9rem;
+    line-height: 30px;
+}
+.car-data > .specification {
+    margin-top: 20px;
+    width: 21rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+.car-data > .specification > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.car-data > .specification > div > span {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: #7c8a97;
+    font-size: 14px;
+}
+.car-data > .specification > div > span > i {
+    color: #f9a826;
+}
+.mt-70 {
+    margin-top: 7rem;
+}
+
+/* -------------Responsive------------- */
+
+@media screen and (max-width: 990px) {
+    .car-row > .car-img,
+    .car-row > .car-data {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .car-detail {
+        width: 70%;
+    }
+    .car-row > .car-img,
+    .car-row > .car-data {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .car-detail {
+        width: 99%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .car-detail {
+        width: 100%;
+    }
+}

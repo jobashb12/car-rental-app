@@ -1,0 +1,114 @@
+.driver-main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 5rem;
+    height: 28rem;
+    background: linear-gradient(rgb(0, 13, 107, 0.9), rgb(0, 13, 107, 0.9)),
+        url("../assets/images/drive.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.become-driver {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+}
+.driver-left,
+.driver-right {
+    width: 50%;
+}
+.driver-left > img {
+    width: 100%;
+    object-fit: contain;
+}
+.driver-right {
+    padding-left: 20px;
+}
+.driver-right > h1 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+}
+.driver-right > button {
+    outline: none;
+    border: none;
+    color: #000d6b;
+    background-color: #fff;
+    padding: 9px 11px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.driver-right > button:hover {
+    background-color: #000d6b;
+    color: #fff;
+}
+
+/* -------------Responsive------------- */
+
+@media screen and (max-width: 990px) {
+    .driver-right > h1 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .become-driver {
+        width: 70%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .driver-left,
+    .driver-right {
+        width: 100%;
+    }
+    .driver-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .driver-right > button {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .driver-right > h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .driver-main {
+        height: 14rem;
+    }
+    .become-driver {
+        width: 90%;
+    }
+    .driver-left {
+        display: none;
+    }
+    .driver-right > button {
+        font-size: 13px;
+    }
+    .driver-right > h1 {
+        font-size: 17px;
+        text-align: center;
+    }
+}

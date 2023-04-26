@@ -1,0 +1,120 @@
+.contact {
+    width: 100%;
+}
+.contact-row {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 85px;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+.contact-form {
+    width: 58%;
+}
+.contact-info {
+    width: 40%;
+}
+.contact-form > h3,
+.contact-info > h3 {
+    font-size: 16px;
+    color: #000d6b;
+    margin-bottom: 10px;
+}
+.contact-form > form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-form > form > .form-control {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+    margin-top: 15px;
+    border: 1px solid rgba(0, 12, 107, 0.118);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.contact-form > form > textarea {
+    width: 100% !important;
+    height: 9rem;
+}
+.contact-form > form > button {
+    background-color: #000d6b;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    padding: 9px 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.contact-info > .address,
+.contact-info > .phone,
+.contact-info > .email {
+    color: #7c8a97;
+    font-size: 0.9rem;
+    margin-top: 12px;
+}
+.contact-info > .phone > span,
+.contact-info > .email > span {
+    color: #000d6b;
+    font-size: 16px;
+    margin-right: 7px;
+}
+.social > h3 {
+    font-size: 16px;
+    color: #000d6b;
+    margin-top: 1.8rem;
+}
+.social > .icon {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    margin-top: 25px;
+}
+.social > .icon > i {
+    font-size: 20px;
+    cursor: pointer;
+}
+.social > .icon > i:hover {
+    color: #001dfb;
+}
+
+/* -------------Responsive------------- */
+
+@media screen and (max-width: 768px) {
+    .contact-row {
+        width: 70%;
+    }
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .contact-row {
+        width: 99%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .contact-row {
+        width: 100%;
+    }
+}

@@ -1,0 +1,246 @@
+.hero-main {
+    width: 100%;
+    position: relative;
+    margin-bottom: 22rem;
+}
+
+.hero-slider1,
+.hero-slider2,
+.hero-slider3 {
+    max-width: 100% !important;
+    height: 650px !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.hero-slider1 {
+    background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+        url("../assets/images/slider-img/slider-1.jpg");
+}
+.hero-slider2 {
+    background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+        url("../assets/images/slider-img/slider-2.jpg");
+}
+.hero-slider3 {
+    background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+        url("../assets/images/slider-img/slider-3.jpg");
+}
+.slider {
+    overflow: hidden;
+}
+.slider-content {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 9rem;
+}
+.slider-content > p {
+    color: #fff;
+    font-size: 25px;
+}
+.slider-content > h2 {
+    color: #fff;
+    font-size: 50px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.slider-content > button {
+    background-color: #fff;
+    color: #000d6b;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 9px 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.slider-content > button > a {
+    text-decoration: none;
+    color: inherit;
+}
+.hero-form {
+    width: 85%;
+    background-color: #fff;
+    height: 16rem;
+    box-shadow: 5px 5px 15px -5px #7c8a97;
+    position: absolute;
+    top: 85%;
+    left: 7.5%;
+    padding: 0 10px;
+    display: flex;
+    z-index: 10;
+}
+.hero-form-left {
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(rgb(249, 168, 38, 0.9), rgb(249, 168, 38, 0.9)),
+        url("../assets/images/cars-img/toyota-offer-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 65px 35px;
+    color: #000d6b;
+    font-size: 42px;
+    font-weight: 600;
+}
+.hero-form-right {
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+}
+.hero-form-right > form {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+.hero-form-right .form-control {
+    width: 30%;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid #7c8a972a;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.hero-form-right .address::placeholder,
+.hero-form-right select,
+.hero-form-right [type="date"] {
+    color: #7c8a97;
+}
+.hero-form-right .time::before {
+    content: "Journey time";
+    color: #7c8a97;
+    margin-right: 0.8rem;
+}
+.hero-form-right button {
+    background-color: #000d6b;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+}
+
+/* ----------------Responsive---------------- */
+@media screen and (max-width: 1025px) {
+    .slider-content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .hero-form {
+        height: 13rem;
+    }
+    .hero-form-left {
+        font-size: 25px;
+        padding: 65px 25px;
+    }
+    .hero-form-right > form {
+        margin-top: 25px;
+    }
+    .hero-form-right .form-control {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .slider-content > h2 {
+        font-size: 30px;
+    }
+    .hero-form {
+        width: 95%;
+        left: 2.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-content {
+        width: 70%;
+    }
+    .slider-content > h2 {
+        font-size: 25px;
+    }
+    .slider-content > p {
+        font-size: 20px;
+    }
+    .slider-content > button {
+        margin-top: 15px;
+    }
+    .hero-slider1,
+    .hero-slider2,
+    .hero-slider3 {
+        height: 450px !important;
+    }
+    .hero-form {
+        left: 15%;
+        width: 70%;
+        height: 13rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 15px;
+    }
+    .hero-form-left {
+        background: none;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: -45px;
+    }
+    .hero-form-right {
+        width: 100%;
+        padding: 0;
+    }
+    .hero-form-right > form {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero-form {
+        width: 90%;
+        left: 5%;
+    }
+    .slider-content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero-form {
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+    .slider-content {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .hero-form-left {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .hero-form-right .form-control {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
