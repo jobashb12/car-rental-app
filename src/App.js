@@ -12,23 +12,24 @@ import Car from "./pages/Car";
 import "./App.css";
 
 const App = () => {
-    return (
-        <div>
-            <Router>
-                <Header />
-                <Routes>
-                    <Route path="/blog/:title" element={<BlogDetail />} />
-                    <Route path="/car/:name" element={<CarDetail />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/blog/" element={<Blog />} />
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/car" element={<Car />} />
-                </Routes>
-                <Footer />
-            </Router>
-        </div>
-    );
+  return (
+    <div>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/blog/:title" element={<BlogDetail />} />
+          <Route path="/car/:name" element={<CarDetail />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog/" element={<Blog />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/car" element={<Car />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
+  );
 };
 
 export default App;
